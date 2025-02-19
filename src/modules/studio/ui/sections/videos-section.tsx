@@ -17,13 +17,69 @@ import Link from "next/link";
 import { VideoThumbnail } from "@/modules/videos/ui/components/video-thumbnail";
 import { snakeCaseToTitle } from "@/lib/utils";
 import { Globe2Icon, LockIcon } from "lucide-react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export const VideosSection = () => {
   return (
-    <Suspense fallback={<p>Loading</p>}>
+    <Suspense fallback={<VideosSectionSkeleton />}>
       <ErrorBoundary fallback={<p>Error</p>}></ErrorBoundary>
       <VideosSectionSuspense />
     </Suspense>
+  );
+};
+
+const VideosSectionSkeleton = () => {
+  return (
+    <>
+      <div className="border-y">
+        <Table>
+          <TableHeader>
+            <TableRow>
+              <TableHead className="pl-6 w-[510px]">Video</TableHead>
+              <TableHead>Visibility</TableHead>
+              <TableHead>Status</TableHead>
+              <TableHead>Date</TableHead>
+              <TableHead className="">Views</TableHead>
+              <TableHead className="">Comments</TableHead>
+              <TableHead className="pr-6">Likes</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <TableRow key={index}>
+                <TableCell className="pl-6">
+                  <div className="flex items-center gap-4">
+                    <Skeleton className="h-20 w-36" />
+                    <div className="flex flex-col gap-2">
+                      <Skeleton className="h-4 w-[100px]" />
+                      <Skeleton className="h-3 w-[150px" />
+                    </div>
+                  </div>
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-20" />
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-20" />
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-20" />
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-10" />
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-20" />
+                </TableCell>
+                <TableCell>
+                  <Skeleton className="h-4 w-10" />
+                </TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
+    </>
   );
 };
 
@@ -54,7 +110,7 @@ export const VideosSectionSuspense = () => {
               .flatMap((page) => page.items)
               .map((video) => (
                 <Link
-                  href={`/studios/videos/${video.id}`}
+                  href={`/studio/videos/${video.id}`}
                   key={video.id}
                   legacyBehavior
                 >
