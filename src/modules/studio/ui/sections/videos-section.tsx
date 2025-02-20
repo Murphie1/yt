@@ -90,6 +90,7 @@ export const VideosSectionSuspense = () => {
       getNextPageParam: (lastPage) => lastPage.nextCursor,
     },
   );
+  console.log(videos.pages[0].items[1].duration);
   return (
     <div>
       <div className="border-y">
