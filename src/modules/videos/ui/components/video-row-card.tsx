@@ -93,6 +93,14 @@ export const VideoRowCard = ({
       notation: "compact",
     }).format(data.likeCount);
   }, [data.likeCount]);
+
+  let likeWord;
+
+  if (compactLikes !== "1") {
+    likeWord = "likes";
+  } else {
+    likeWord = "like";
+  }
   return (
     <div className={videoRowCardVariants({ size })}>
       <Link href={`/videos/${data.id}`} className={thumbnailVariants({ size })}>
@@ -150,7 +158,7 @@ export const VideoRowCard = ({
             )}
             {size === "compact" && (
               <p className="text-xs text-muted-foreground mt-1">
-                {compactViews} views • {compactLikes}
+                {compactViews} views • {compactLikes + " " + likeWord}
               </p>
             )}
           </Link>
