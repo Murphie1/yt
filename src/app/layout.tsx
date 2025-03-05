@@ -5,6 +5,8 @@ import "./globals.css";
 import { TRPCProvider } from "@/trpc/client";
 import { Toaster } from "sonner";
 
+export const dynamic = "force-dynamic";
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
