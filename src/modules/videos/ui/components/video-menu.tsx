@@ -60,7 +60,7 @@ export const VideoMenu = ({ videoId, onRemove, variant }: VideoMenuProps) => {
             Add to play list
           </DropdownMenuItem>
           {onRemove && (
-            <DropdownMenuItem onClick={() => {}}>
+            <DropdownMenuItem onClick={onRemove}>
               <Trash2Icon className="mr-2 size-4" />
               Remove option
             </DropdownMenuItem>
