@@ -21,7 +21,7 @@ interface CommentFormProps {
   onSuccess?: () => void;
   onCancel?: () => void;
   variant?: "comment" | "reply";
-  parentId: string;
+  parentId?: string;
 }
 
 export const CommentForm = ({
