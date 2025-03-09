@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NewTube - A Next.js 15 YouTube Clone
 
-## Getting Started
+NewTube is a highly detailed implementation of the **Code with Antonio** project, replicating the core functionalities of YouTube with cutting-edge web development technologies. This project has served as a **formative learning experience**, refining my understanding of modern web development, server components, and AI-powered enhancements.
 
-First, run the development server:
+## 🚀 Features
+### 🛠 Technical Stack
+- **Next.js 15 & React 19** - Modern architecture with optimal performance
+- **Type-safe API communication** - Utilizing **tRPC** for seamless backend interactions
+- **Server components** - Advanced **prefetching** strategies for performance
+- **Client-side suspense** - Enabling smooth and reactive UI updates
+- **PostgreSQL + DrizzleORM** - Robust, scalable database management
+- **Full authentication system** - Secured access control using **Clerk**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🎥 Video Features
+- **Professional-grade video player** - Quality controls, buffering optimizations
+- **Real-time video processing** - Instant encoding & delivery via **Mux**
+- **AI-powered title & description generation** - Enhancing metadata with **Google Generative AI**
+- **Automatic video transcription** - Generating captions for accessibility
+- **Smart thumbnail generation** - AI-assisted selection of visually appealing thumbnails
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Learning Takeaways
+This project has significantly **enhanced my comprehension** of:
+- **Cutting-edge Next.js capabilities**, including **server actions & RSC**
+- **Optimized database querying** with **DrizzleORM**
+- **Modern frontend performance techniques** (Suspense, Radix UI, React Query)
+- **Integrating AI services** for smart content management
+- **Building a scalable video streaming platform**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📜 Credits
+This project is an **in-depth reproduction** of the work by **Code with Antonio**, demonstrating the power of **Next.js, tRPC, and AI-driven enhancements** in modern web applications.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
