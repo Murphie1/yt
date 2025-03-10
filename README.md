@@ -16,7 +16,6 @@ NewTube is a highly detailed implementation of the **Code with Antonio** project
 - **Real-time video processing** - Instant encoding & delivery via **Mux**
 - **AI-powered title & description generation** - Enhancing metadata with **Google Generative AI**
 - **Automatic video transcription** - Generating captions for accessibility
-- **Smart thumbnail generation** - AI-assisted selection of visually appealing thumbnails
 
 ## 📚 Learning Takeaways
 This project has significantly **enhanced my comprehension** of:
