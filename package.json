@@ -86,10 +86,10 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
+    "eslint": "^8",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^19",
+    "@types/react-dom": "^18",
     "drizzle-kit": "^0.30.4",
     "eslint": "^9",
     "eslint-config-next": "14.2.15",
